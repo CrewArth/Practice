@@ -1,0 +1,42 @@
+body{
+    border: 1px solid black;
+    background-image: url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
+    color: white;
+}
+
+h2{
+    color: yellowgreen;
+}
+
+h1{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline overline dotted;
+    font-variant: small-caps;
+    text-transform: uppercase;
+
+    
+}
+
+.htmltags{
+    color: seagreen;
+    border: 2px dotted lightseagreen ;
+    outline: 2px solid;
+    margin-left: 20px;
+    border-width: 2px;
+    outline-offset: 5px;
+    border-radius: 30px;
+    text-align: center;
+    width: 200px;
+}
+
+h2:hover{
+    color: red;
+}
+.hover-class:hover{
+    background-color: hsl(0, 0%, 49%);
+}

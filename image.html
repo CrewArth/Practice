@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            background: linear-gradient(to right, #07002d 0%, #3057d6 100%);
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        div {
+            color: white;
+
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: hsl(182, 25%, 40%);
+            overflow: hidden;
+        }
+
+        .box2 {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            overflow: scroll;
+        }
+
+.box7 {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            overflow-y: scroll;
+            
+        }
+
+        .box3 {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        .box4 {
+            height: 20px;
+            width: 120px;
+            border: 2px solid black;
+            overflow: hidden;
+           
+        }
+
+        .box5{
+            height: 20px;
+            width: 120px;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .box6{
+            height: 100px;
+            width: 100px;
+            overflow: visible;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Images and Link</h1>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Image</th>
+            <th>URL</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td><img src="images/image2.jpg" alt="image"></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="forms.html">Forms</a>
+                        </li>
+                        <li>
+                            <a href="tables.html">Tables</a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>02</td>
+                <td><img src="images/unnamed.jpg" alt="image"></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="forms.html">Forms</a>
+                        </li>
+                        <li>
+                            <a href="tables.html">Tables</a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td><img src="images/spiderman.gif" alt="image"></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="forms.html">Forms</a>
+                        </li>
+                        <li>
+                            <a href="tables.html">Tables</a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Overflow Properties</h1>
+    <div class="container">
+        <div class="box1">
+            <span>Font is white but transparent. There is more content inside this box, but it is only showing this
+                much.</span>
+        </div>
+
+        <div class="box2">
+            <span>The Content is not exceeding the height-width.</span>
+        </div>
+
+        <div class="box7">
+            <span>helllo i am arth how are tou  </span>
+        </div>
+        <div class="box3">
+            <span>Only if the content is the exceeding, I will br able to scroll the page.</span>
+        </div>
+
+        <div class="box4">
+            <span>More content is there ahead, please look into it,</span>
+        </div>
+
+         <div class="box5">
+            <span>More content is... there ahead, please look into it,</span>
+        </div>
+
+        <div class="box6">
+            <span>In any case, the user will be able to see all the content, exceeding the height and width.</span>
+        </div>
+    </div> <!-- Container Class Div End.-->
+</body>
+
+</html>

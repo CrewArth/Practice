@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practiceform.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Complete Profile Form</h2>
+        </div>
+
+        <div class="main-content">
+            <form>
+                <fieldset>
+                    <legend>Basic Information</legend>
+
+                    <div class="ip1">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <div class="ip1">
+                        <label for="phone">Phone Number:</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="url">Portfolio URL:</label>
+                        <input type="url" name="url" id="url">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="resume">Upload Resume:</label>
+                        <input type="file" name="resume" id="resume" accept=".pdf">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Selection</legend>
+
+                    <div class="ip1" id="genderid">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" id="male">Male
+                        <input type="radio" name="gender" id="female">Female
+                    </div>
+
+                    <div class="ip1">
+                        <label for="resume">Skills:</label>
+                        <input type="checkbox" name="html" id="html">HTML
+                        <input type="checkbox" name="css" id="css">CSS
+                        <input type="checkbox" name="js" id="js">JavaScript
+                        <input type="checkbox" name="react" id="react">React
+                        <input type="checkbox" name="angular" id="angular">Angular
+                    </div>
+
+                    <div class="ip1">
+                        <label for="loc">Prefered Location</label>
+                        <select name="loc" id="loc">
+                        <option value="hyd">Hyderabad</option>
+                        <option value="bang">Bangalore</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="pune">Pune</option>
+                        <option value="delhi">Delhi</option>    
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Advance Section</legend>
+
+                    <div class="ip1">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="week">Week</label>
+                        <input type="week" name="week" id="week">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="month">Month</label>
+                        <input type="month" name="month" id="month">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="appt">Select a time</label>
+                        <input type="time" name="appt" id="appt">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="num">Local Date Time</label>
+                        <input type="datetime-local" name="dt" id="dt">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="num">Pick a Color</label>
+                        <input type="color" name="color" id="color">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" min="18" max="100" minlength="1" maxlength="100">
+                    </div>
+
+                    <div class="ip1">
+                        <label for="roe">Range of Exp</label>
+                        <input type="range" name="roe" id="roe" min="0" max="20">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Text Inputs</legend>
+
+                    <div class="ip1">
+                        <label for="yourself">About Yourself</label>
+                        <textarea name="yourself" id="yourself" cols="30" rows="10" placeholder="Write about yourself"></textarea>
+                    </div>
+
+                    <div class="ip1">
+                        <label for="address">Address</label>
+                        <textarea name="yourself" id="yourself" cols="30" rows="10" placeholder="Enter full address"></textarea>
+                    </div>
+
+                    <div class="ip1">
+                        <input type="submit" value="Create Profile">
+                        <input type="reset" value="Clear">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

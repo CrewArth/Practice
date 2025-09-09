@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: bisque; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: image('images/bg1.jpg');
+}
+
+body{
+    background-image: url('images/bg1.jpg');    
+    opacity: 0.90;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+}
+label{
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+    font-weight: bold;
+    border: 20px;
+}
+
+.container{
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(196, 180, 99, 0.10);
+    background-image: url('/images/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.form-data{
+    
+    text-align: center;
+    display: inline;
+    
+}
+
+.uname{
+    margin: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+::placeholder{
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    color: black;
+}
+
+input[type="text"], input[type="password"]{
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: antiquewhite;
+    font-size: large;
+}
+/* 
+.btn{
+    border-radius: 20px;
+    background-color: #fff;
+    padding-top: 30px;
+    width: 150px;
+    margin-left: 190px;
+}
+ */
+
+.btnn{
+    /* border-radius: 20px;
+    background-color: #fff;
+    padding-top: 30px;
+    margin-top: 40px;
+    width: 150px;
+    margin-left: 190px; */
+
+    align-items: center;
+    text-align: center;
+    margin-left: 190px;
+    margin-top: 30px;
+    background-image: url('images/image2.jpg');
+    height: 35px;
+    width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-style: bold;
+    color: white;
+    border-radius: 30px;
+}
+

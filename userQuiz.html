@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    <button onclick="generateUsername()">Generate Username</button>
+    <button onclick="getNumberofVowels()">Count Vowels</button>
+    <button onclick="getInitials()">Get Initials</button>
+    <button onclick="fruitString()">Get Fruits</button>
+
+    <h1 id="username"></h1>
+    <h1 id="username2"></h1>
+    <h1 id="username3"></h1>
+    <h1 id="username4"></h1>
+    <h1 id="username5"></h1>
+    <h1 id="username6"></h1>
+    <h1 id="username7"></h1>
+
+    <script>
+        let spanName = document.getElementById('username')
+        let spanName2 = document.getElementById('username2')
+        let spanName3 = document.getElementById('username3')
+        let spanName4 = document.getElementById('username4')
+        let spanName5 = document.getElementById('username5')
+        let spanName6 = document.getElementById('username6')
+        let spanName7 = document.getElementById('username7')
+
+
+        function generateUsername(){ 
+            let rawUsername = prompt('Enter to generate Username: ');
+            let trimUsername = rawUsername.replace(/\s+/g, "");
+            let lengthUsername = trimUsername.length;
+            
+            console.log('@'+rawUsername+lengthUsername);
+
+            spanName.append("Your generated username is: @"+trimUsername+lengthUsername);
+        }
+        
+/*
+Prompt the user to enter their full name. Generate a username for them based on the input. Start username with @,followed by their first name initial, lastname and length.
+
+Count the number of words and vowels in a sentence
+
+Get initials of the names with . in between 2 initials
+*/
+
+    
+        function getNumberofVowels(){
+            let sentence = prompt("Enter the Sentence");
+            let countVowel = 0;
+            let vowels = 'aeiouAEIOU';
+
+            sentence = sentence.trim();
+
+            for(let ch of sentence){
+                if(vowels.includes(ch)){
+                    countVowel ++;
+                }
+            }
+
+            spanName2.append("Orignal Sentence: "+sentence);
+            spanName3.append("Vowel Count: "+countVowel);
+
+        }
+
+        // Get initials of the names with . in between 2 initials
+        function getInitials(){
+            let sentence =prompt("Please Enter First and Last Name: ").trim().split(' ');
+            //IO: Arth Vala OP: A.V
+
+            let firstInitial = sentence[0][0];
+            let secondInitial = sentence[1][0];
+
+            spanName4.append(firstInitial.toUpperCase()+"."+secondInitial.toUpperCase());
+            
+        }
+
+
+        function myfunc(){
+            let chars =prompt("Please Enter First and Last Name: ").trim().split(' ');
+            let vow = chars.filter(c => "aeiou".includes(c));
+            console.log(vow);
+        }
+
+
+        /*
+        You have an array of strings: ["apple", "banana", "kiwi", "grape", "blueberry"]. 
+        Create a new array containing only the strings that have a length greater than 5.
+        Transform this filtered array into a new array where each string is capitalized.
+
+
+        Prompt the user to enter their full name. Generate a username for them based on the input. Start username with @,followed by their first name initial, lastname and length.
+        Count the number of words and vowels in a sentence
+        Get initials of the names with . in between 2 initials
+ */
+
+    function fruitString(){
+        let fruits = ['apple', 'banana', 'kiwi', 'grape', 'blueberry'];
+        spanName5.append("Orignal String: ",fruits);
+
+        spanName6.append("Long String: ");
+        spanName7.append("Capitalize String: ");
+
+        for(let fruit of fruits){
+            console.log(fruit);
+
+            if(fruit.length > 5){
+                spanName6.append(fruit+',');
+                spanName7.append(fruit.toUpperCase()+',');
+
+            }
+        }
+    }
+
+    </script>
+</body>
+
+</html>

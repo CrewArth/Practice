@@ -1,21 +1,21 @@
-function calcBmi(){
-    let markHeight = 1.69;
-    let markWeight = 78;
-    let johnHeight =1.95 ;
-    let johnWeight =92;
+// function calcBmi(){
+//     let markHeight = 1.69;
+//     let markWeight = 78;
+//     let johnHeight =1.95 ;
+//     let johnWeight =92;
 
-    const Mbmi = markWeight / (markHeight * markHeight);
-    const Jbmi = johnWeight / (johnHeight * johnHeight);
-    console.log('Mark BMI: ', Mbmi);
-    console.log('John BMI: ', Jbmi);
+//     const Mbmi = markWeight / (markHeight * markHeight);
+//     const Jbmi = johnWeight / (johnHeight * johnHeight);
+//     console.log('Mark BMI: ', Mbmi);
+//     console.log('John BMI: ', Jbmi);
 
-    if(Mbmi > Jbmi){
-        console.log("Mark BMI is more than John.");
-    }
-    else{
-        console.log("John BMI is more than Mark");
-    }
-}
+//     if(Mbmi > Jbmi){
+//         console.log("Mark BMI is more than John.");
+//     }
+//     else{
+//         console.log("John BMI is more than Mark");
+//     }
+// }
 
 
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Kitchen Assistant App</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .container { 
+            display: block;
+            flex-direction: row;
+            
+        }
+        button{
+            width: 220px;
+            height: 150px;
+            font-size: xx-large;
+            background-color: brown;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            color: #fff;
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+
+        #startR{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+        }
+        body{
+            text-align: center;
+        }
+        #alltask{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <button id="startRoutine" onclick="">Start Routine</button>
+    <button id="reset" onclick="resetData()">Reset</button>
+    </div>
+
+    <h2 id="startR">Click Start Routine to Login</h2>
+
+    <div>
+        <ul id="bp">
+            <li id="lid" style="font-weight: bolder;"></li>
+        </ul>
+    </div>
+
+    <div>
+        <h1 id="alltask" style="display: block;"></h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
